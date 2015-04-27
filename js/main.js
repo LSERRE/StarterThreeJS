@@ -24,12 +24,6 @@ $(function () {
 	    camera = new THREE.PerspectiveCamera( 75, windowWidth / windowHeight, 1, 10000 );
 	    camera.position.z =  1000;
 
-	    geometry = new THREE.BoxGeometry( 200, 200, 200 );
-	    material = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe: true } );
-
-	    mesh = new THREE.Mesh( geometry, material );
-	    scene.add( mesh );
-
 	    /* Init renderer as WebGlRenderer */
 	    renderer = new THREE.WebGLRenderer();
 
