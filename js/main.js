@@ -57,9 +57,9 @@ $(function () {
 
 		document.body.appendChild( renderer.domElement );
 
-		generateCircles();
-
 		generatePlanetes();
+
+		generateCircles();
 
 		generateSolarAngle();
 	}
@@ -94,19 +94,9 @@ $(function () {
 		}
 	}
 
-	function animate() {
-
-		rotatePlanetes();
-		requestAnimationFrame(animate);
-		controls.update();
-		stats.update();
-		renderer.render( scene, camera );
-
-	}
-
 	function rotatePlanetes() {
 		for( var i = 0; i < planeteGroup.children.length; i++ )  {
-			// The sun doesn't rotate
+			// sun doesn't rotate
 			if( i!= 0 ) {
 				rotateAroundObjectAxis(planeteGroup.children[i], yAxis, 100 / sources.planetes[i].rotation);
 				planeteGroup.children[i].position.x = Math.sin(planetes[i]["solarAngle"].value) * sources.planetes[i].distance * params.multiPlaneteDistance;
@@ -130,6 +120,16 @@ $(function () {
 	    rotWorldMatrix.multiply(object.matrix);
 	    object.matrix = rotWorldMatrix;
 	    object.rotation.setFromRotationMatrix(object.matrix);
+	}
+
+	function animate() {
+
+		rotatePlanetes();
+		requestAnimationFrame(animate);
+		controls.update();
+		stats.update();
+		renderer.render( scene, camera );
+
 	}
 
 
