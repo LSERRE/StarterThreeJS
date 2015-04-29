@@ -1,6 +1,14 @@
 var sources = {
     planetes : [
         {
+            "name"              : "Sun",
+            "distance"          : "0",
+            "size"              : "40000",
+            "revolution"        : "0",
+            "texture"           : "sunmap.jpg",
+            "rotation"          : "0",
+        },
+        {
             "name"              : "Mercure",
             "distance"          : "58",
             "size"              : "4900",
