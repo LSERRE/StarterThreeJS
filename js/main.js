@@ -1,5 +1,4 @@
-$(function () {
-
+window.onload = function() {
 	var params = {
 	}
 
@@ -39,4 +38,4 @@ $(function () {
 
 		return stats;
 	}
-});
+}
