@@ -1,7 +1,8 @@
-var params = new function() {
-}
-
 $(function () {
+
+	var params = {
+	}
+
 	var windowWidth = window.innerWidth;
 	var windowHeight = window.innerHeight;
 
@@ -10,40 +11,6 @@ $(function () {
 
 	/* Init GUI */
 	var gui = new dat.GUI();
-
-	var scene, camera, renderer;
-
-	init();
-	animate();
-
-	function init() {
-		/* Init Scene */
-	    scene = new THREE.Scene();
-
-	    /* Init Camera */
-	    camera = new THREE.PerspectiveCamera( 75, windowWidth / windowHeight, 1, 10000 );
-	    camera.position.z =  1000;
-
-	    /* Init renderer as WebGlRenderer */
-	    renderer = new THREE.WebGLRenderer();
-
-	    /* Set renderer size */
-	    renderer.setSize( windowWidth, windowHeight );
-
-	    /* Append canvas with goods sizes in body  */
-	    document.body.appendChild( renderer.domElement );
-	}
-
-	function animate() {
-		/* Updates stats */
-		stats.update();
-
-		/* Loop on animate function when browser has an avaible frame */
-	    requestAnimationFrame( animate );
-
-	    /* Render and update canvas with scene and camera */
-	    renderer.render( scene, camera );
-	}
 
 	function initStats () {
 		var stats = new Stats();
