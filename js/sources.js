@@ -62,7 +62,7 @@ var sources = {
             "size"              : "51152",
             "revolution"        : "29736",
             "texture"           : "uranusmap.jpg",
-            "roation"           : "0.6",
+            "rotation"           : "0.6",
         },
         {
             "name"              : "Neptune",
@@ -70,7 +70,7 @@ var sources = {
             "size"              : "49620",
             "revolution"        : "30660",
             "texture"           : "neptunemap.jpg",
-            "roation"           : "0,75",
+            "rotation"           : "0,75",
         },
         {
             "name"              : "Pluton",

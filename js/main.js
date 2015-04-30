@@ -1,4 +1,4 @@
-$(function () {
+window.onload = function() {
 	var windowWidth = window.innerWidth;
 	var windowHeight = window.innerHeight;
 
@@ -160,4 +160,4 @@ $(function () {
 
 		return stats;
 	}
-});
+}
