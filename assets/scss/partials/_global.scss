@@ -1,0 +1,47 @@
+// Global style
+html, body {
+    height: 100%;
+}
+
+// Class utils
+.no-scroll{
+    overflow: hidden;
+}
+
+.only-mobile {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.table{
+    display: table;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.p-r{
+    position: relative;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.clearfix {
+	clear: both;
+}

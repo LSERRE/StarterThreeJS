@@ -1,0 +1,57 @@
+{
+  "name": "gsap",
+  "filename": "TweenMax.min.js",
+  "version": "1.18.0",
+  "description": "Think of GSAP as the Swiss Army Knife of animation...but better. It animates anything JavaScript can touch (CSS properties, canvas library objects, SVG, generic objects, whatever) and it solves lots of browser inconsistencies, all with blazing speed (up t",
+  "homepage": "http://www.greensock.com/gsap-js/",
+  "main": "./src/uncompressed/TweenMax.js",
+  "keywords": [
+    "animation",
+    "TweenLite",
+    "TweenMax",
+    "TimelineLite",
+    "TimelineMax",
+    "GSAP",
+    "GreenSock",
+    "easing",
+    "EasePack",
+    "jQuery",
+    "jquery.gsap.js",
+    "Bezier",
+    "SVG",
+    "3D",
+    "2D",
+    "transform",
+    "tweening"
+  ],
+  "maintainers": [
+    {
+      "name": "greensock",
+      "email": "info@greensock.com"
+    }
+  ],
+  "bugs": {
+    "url": "http://greensock.com/forums/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greensock/GreenSock-JS.git"
+  },
+  "gitHead": "df55cb80d6f334875fcb5c3d43645b007df7f75d",
+  "_id": "gsap@1.18.0",
+  "scripts": {},
+  "_shasum": "cf6a8c4cd38fcf764b16aab746420b2b9856cd82",
+  "_from": "gsap@*",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "greensock",
+    "email": "info@greensock.com"
+  },
+  "dist": {
+    "shasum": "cf6a8c4cd38fcf764b16aab746420b2b9856cd82",
+    "tarball": "http://registry.npmjs.org/gsap/-/gsap-1.18.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/gsap/-/gsap-1.18.0.tgz"
+}

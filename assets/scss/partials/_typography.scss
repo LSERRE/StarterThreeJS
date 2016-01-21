@@ -1,0 +1,14 @@
+// Base fonts example
+$sans: Arial, Helvetica, sans-serif;
+$serif: "Times New Roman", times, serif;
+
+body{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin primaryFont() {
+}
+
+@mixin starWarsFont() {
+}

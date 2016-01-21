@@ -15,6 +15,8 @@
 //    Zoom - middle mouse, or mousewheel / touch: two finger spread or squish
 //    Pan - right mouse, or arrow keys / touch: three finter swipe
 
+var THREE = require('THREE');
+
 THREE.OrbitControls = function ( object, domElement ) {
 
 	this.object = object;

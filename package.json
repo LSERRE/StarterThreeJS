@@ -4,8 +4,40 @@
   "description": "A simple starter kit for ThreeJS projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify assets/js/index.js -o bundle.js",
+    "watch": "watchify assets/js/index.js -o bundle.js"
+  },
+  "browser": {
+    "three": "assets/lib/three.min.js"
+  },
+  "browserify-shim": "browserify-shim-config.js",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
   },
   "author": "LSERRE",
   "license": "ISC",
+  "devDependencies": {
+    "budo": "^5.1.0",
+    "browserify": "^9.0.8",
+    "browserify-shim": "^3.8.10",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.4",
+    "lodash.assign": "^3.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.1.2"
+  },
+  "dependencies": {
+    "three": "^0.73.2",
+    "three-orbit-controls": "^72.0.0"
+  }
 }
